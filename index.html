@@ -1,0 +1,133 @@
+<html>
+<head>
+	<title>ACE - Welcome!</title>
+	<link rel="icon" type="image/png" href="images/fav.png">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link href="./css/jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>	
+	<div id="topBanner">
+		<div class="holderTop">
+			<div class="leftInRow7030">
+				<label id="nameLabel" class="heading matrix"/>
+			</div>
+			<div class="rightInRow7030">
+				<a href="https://www.facebook.com/kappagantula.aditya" title="facebook"><img class="icon inRow" src="images/icons/facebook.png"/></a>
+				<a href="http://www.geekzwish.blogspot.com" title="blogger"><img class="icon inRow" src="images/icons/blogger.png"/></a>
+				<a href="http://stackoverflow.com/users/898030/aditya-kappagantula" title="stackoverflow"><img class="icon inRow" src="images/icons/stackoverflow.png"/></a>
+				<a href="https://github.com/aditya-kappagantula" title="github"><img class="icon inRow" src="images/icons/github.png"/></a>
+				<a href="http://www.linkedin.com/pub/aditya-kappagantula/13/a6b/7b/" title="linkedin"><img class="icon inRow" src="images/icons/linkedin.png"/></a>				
+				
+				<!-- <a href=""><img class="icon inRow" src="images/icons/share.png"/></a> -->
+			</div>		
+		</div>
+		<hr/>
+		<nav>
+			<ul>
+				<li><a id="homePage" href="#">Home</a></li>								
+				<li><a id="education" href="#">Education</a></li>
+				<li><a id="work" href="#">Work</a></li>
+				<li><a id="projects" href="#">Projects</a>
+					<div>
+						<ul>							
+							<li><a id="oodp" href="#">Object Oriented Design Patterns</a></li>							
+							<li><a id="edulix" href="#">Edulix.com</a></li>		
+							<li><a id="msams" href="#">Automated Mobile Attendance</a></li>
+							<li><a id="cam" href="#">Common Admin Mode</a></li>
+							<li><a id="pricing" href="#">Pricing Simulation</a></li>
+							<li><a id="accounting" href="#">Accounting Simulation</a></li>							
+							<li><a id="supercop" href="#">Super Cop</a></li>
+							<li><a id="ararat" href="#">Ararat Simulation</a></li>
+							<li><a id="volvo" href="#">Volvo Simulation</a></li>
+							<li><a id="auditintel" href="#">AuditIntel.co.uk</a></li>
+							<li><a id="emncstrategies" href="#">Emncstrategies.com</a></li>
+							<li><a id="graphics" href="#">Graphics</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a id="research" href="http://ijarcs.info/?wicket:bookmarkablePage=:com.genxcellence.journal.pharmacy.web.issue.IssueDetail&target=548&author=Kalyanaraman+P,Kappagantula+Aditya&country=India&title=Automation+of+Attendance+Posting+System+Using+Messaging+Services">Research</a></li>
+				<li><a id="skillset" href="#">Skill Set</a></li>
+				<li><a id="resume" href="https://googledrive.com/host/0ByrO98OT5fLkQWFqOUJWVXFDMFE/Resume.Aditya.Kappagantula.pdf">Resume</a></li>
+				<li><a id="hobbies" href="#">Hobbies</a></li>
+				<li><a id="attitude" href="#">Attitude</a></li>				
+				<li><a id="contact" href="#">Get In Touch</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="pageContent">
+
+	</div>			
+	<div class="footer">
+		<hr/>Available For Work!<hr/>
+	</div>	
+	<script src="./scripts/jquery-1.8.3.min.js"></script>
+	<script src="./scripts/jquery.bxslider.min.js"></script>
+	<script src="./scripts/homepage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			loadName();
+			loadHomePage();
+			$( "#homePage" ).click(function( event ) {
+				loadHomePage();
+			});
+			$( "#education" ).click(function( event ) {
+				loadEducation();
+			});
+			$( "#contact" ).click(function( event ) {
+				loadContact();
+			});
+			$( "#work" ).click(function( event ) {
+				loadWork();
+			});
+			$( "#hobbies" ).click(function( event ) {
+				loadHobbies();
+			});
+			$( "#attitude" ).click(function( event ) {
+				loadAttitude();
+			});
+			$( "#skillset" ).click(function( event ) {
+				loadSkills();
+			});
+
+			//Projects Functions
+			$( "#oodp" ).click(function( event ) {
+				loadOodp();
+			});
+			$( "#graphics" ).click(function( event ) {
+				loadGraphics();
+			});
+			$( "#edulix" ).click(function( event ) {
+				loadEdulix();
+			});
+			$( "#msams" ).click(function( event ) {
+				loadMsams();
+			});
+			$( "#cam" ).click(function( event ) {
+				loadCam();
+			});
+			$( "#pricing" ).click(function( event ) {
+				loadPricing();
+			});
+			$( "#accounting" ).click(function( event ) {
+				loadAccounting();
+			});
+			$( "#supercop" ).click(function( event ) {
+				loadSupercop();
+			});
+			$( "#ararat" ).click(function( event ) {
+				loadArarat();
+			});
+			$( "#volvo" ).click(function( event ) {
+				loadVolvo();
+			});
+
+			$( "#auditintel" ).click(function( event ) {
+				loadAuditintel();
+			});
+			$( "#emncstrategies" ).click(function( event ) {
+				loadEmncstrategies();
+			});
+		});
+	</script>
+</body>
+</html>
