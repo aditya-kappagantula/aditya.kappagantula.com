@@ -7,10 +7,11 @@
 	<link rel="icon" type="image/png" href="images/fav.png">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="./css/jquery.bxslider.css" rel="stylesheet" />
@@ -28,7 +29,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">ACE</a>
+					<a class="navbar-brand" href="http://aditya.kappagantula.com"><img class="img-responsive logo" src="./images/rubiks.png" /></a>
+					<a class="navbar-brand" href="http://aditya.kappagantula.com">Aditya Kappagantula</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,9 +38,8 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Education<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Master's</a></li>
-								<li><a href="#">Bachelor's</a></li>
-								<li><a href="#">High School & More</a></li>
+								<li><a id="masters-menu" href="#">Master's</a></li>
+								<li><a id="bachelors-menu" href="#">Bachelor's</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -84,7 +85,7 @@
 			</div><!-- /.container-fluid -->
 		</nav>
 		<div class="container-fluid main">
-			<div class="row index-table ">
+			<div class="row index-table" id="index-table" >
 				<div id="row-1" class="row index-row-1">
 					<div id="message" class="col-xs-12 table-cell">
 						<h1 id="about-1" class="text-danger animated hinge">Hi there,</h1>
@@ -102,22 +103,22 @@
 					<div class="col-xs-12 table-cell text-center">
 						<div class="wrap">
 							<div class="cube">
-								<div class="front">
+								<div class="front-face">
 									<a href="https://www.facebook.com/kappagantula.aditya"><img src="./images/FBProfile.jpg" class="img-responsive" /></a>
 								</div>
-								<div class="back">
+								<div class="back-face">
 									<img src="./images/ace.png" class="img-responsive" />
 								</div>
-								<div class="top">
+								<div class="top-face">
 									<img src="./images/rubiks.png" class="img-responsive" />
 								</div>
-								<div class="bottom">
+								<div class="bottom-face">
 									<a href="https://www.facebook.com/kappagantula.aditya"><img src="./images/linkedin.png" class="img-responsive" /></a>
 								</div>
-								<div class="left">
+								<div class="left-face">
 									<a href="https://www.github.com/aditya-kappagantula"><img src="./images/github.jpeg" class="img-responsive" /></a>
 								</div>
-								<div class="right">
+								<div class="right-face">
 									<a href="http://www.geekzwish.blogspot.com"><img src="./images/blogger.png" class="img-responsive" /></a>
 								</div>
 							</div>

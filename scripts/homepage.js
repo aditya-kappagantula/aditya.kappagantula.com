@@ -1,15 +1,18 @@
 $(document).ready(function(){
 	$("#about-2").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", showSmiley);
 	$("#fishes").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", removeSmileyAndFishes);
-	//$("#message").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", showFixing);
+	$("#masters-menu").click(function(){
+		loadMastersEducation();
+	});
+	$("#bachelors-menu").click(function(){
+		loadBachelorsEducation();
+	});
 });
 
 function showSmiley(){
     $("#about-1").remove();
     $("#about-2").remove();
-    $(".table-cell").css("height","100%");
     $("#row-2").addClass("animated fadeOut");
-    // $("#row-2").toggleClass("hidden");
     $("#message").addClass("text-center");
 	$("#message").css("vertical-align","middle");
 	$("#smiley").toggleClass("hidden");
@@ -33,7 +36,7 @@ var slider = (function(){
 	return function sliderClosure(){
 		if(count>=0){
 			$("#message").remove();
-			$("#row-1").append("<div id='message' class='table-cell vcenter'></div>");
+			$("#row-1").append("<div id='message' class='table-cell vertical-center'></div>");
 			$("#message").html("<h1>"+count+"</h1>");
 			count--;
 			$("#message").removeClass("animated zoomIn");
@@ -45,3 +48,24 @@ var slider = (function(){
 	}
 });
 
+function loadMastersEducation(){
+	$("#row-1").remove();
+	$("#row-2").remove();
+	$("#page-content").remove();
+	$("#index-table").prepend("<div id='page-content' class='row page-content table-cell'></div>");
+	$("#page-content").load("pages/mastersEducation.html");
+	$(".carousel").carousel({
+		interval:2000
+	});
+}
+
+function loadBachelorsEducation(){
+	$("#row-1").remove();
+	$("#row-2").remove();
+	$("#page-content").remove();
+	$("#index-table").prepend("<div id='page-content' class='row page-content table-cell'></div>");
+	$("#page-content").load("pages/bachelorsEducation.html");
+	$(".carousel").carousel({
+		interval:2000
+	});
+}
