@@ -7,6 +7,15 @@ $(document).ready(function(){
 	$("#bachelors-menu").click(function(){
 		loadBachelorsEducation();
 	});
+	$("#skills-menu").click(function(){
+		loadSkills();
+	});
+	$("#attitude-menu").click(function(){
+		loadAttitude();
+	});
+	$("#contact-menu").click(function(){
+		loadContact();
+	});
 });
 
 function showSmiley(){
@@ -65,6 +74,39 @@ function loadBachelorsEducation(){
 	$("#page-content").remove();
 	$("#index-table").prepend("<div id='page-content' class='row page-content table-cell'></div>");
 	$("#page-content").load("pages/bachelorsEducation.html");
+	$(".carousel").carousel({
+		interval:2000
+	});
+}
+
+function loadSkills(){
+	$("#row-1").remove();
+	$("#row-2").remove();
+	$("#page-content").remove();
+	$("#index-table").prepend("<div id='page-content' class='row page-content table-cell'></div>");
+	$("#page-content").load("pages/skills.html");
+	$(".carousel").carousel({
+		interval:2000
+	});
+}
+
+function loadAttitude(){
+	$("#row-1").remove();
+	$("#row-2").remove();
+	$("#page-content").remove();
+	$("#index-table").prepend("<div id='page-content' class='row page-content table-cell'></div>");
+	$("#page-content").load("pages/attitude.html");
+	$(".carousel").carousel({
+		interval:2000
+	});
+}
+
+function loadContact(){
+	$("#row-1").remove();
+	$("#row-2").remove();
+	$("#page-content").remove();
+	$("#index-table").prepend("<div id='page-content' class='row page-content table-cell'></div>");
+	$("#page-content").load("pages/contact.html");
 	$(".carousel").carousel({
 		interval:2000
 	});
